@@ -1,7 +1,7 @@
 <ul>
 {% if cats %}
     {% for c in cats %}
-        {% if c== act_cat %}
+        {% if c == act_cat %}
             <li>    
             <strong>
                 <a href="{% url 'show_category' c.slug %}">{{c.name}}</a>
